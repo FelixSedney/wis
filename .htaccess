@@ -1,0 +1,45 @@
+# Laat een gekoppeld domein uitkomen in een sub-map, met de naam van
+# dat domein.
+#
+# Schakel de RewriteEngine in.
+RewriteEngine on
+
+# In iedere onderliggende map kan een .htaccess-bestand de configuratie
+# overschrijven.
+#AllowOverride all
+
+# Wijzig �gekoppelddomein� in de domeinnaam, op de eerste en derde regel
+# hieronder. Wijzig �tld� in de extensie van het domein (nl, com, net, eu).
+
+RewriteCond %{HTTP:Host} ^(?:www\.)?inhetoogfotografie\.nl$
+RewriteCond %{REQUEST_URI} ^/$
+RewriteRule .? StartPage.html
+
+RewriteEngine  on
+RewriteBase    /~quux/
+RewriteRule    index1\.aspx$  www.felixs.nl\default.html
+
+RewriteCond %{HTTP:Host} ^(?:www\.)?inhetoogfotografie\.nl$
+RewriteCond %{REQUEST_URI} /(.+) [NC]
+RewriteRule .? %1 [L,NS]
+
+RewriteCond %{HTTP:Host} ^(?:www\.)?inhetoogfotografie\.nl$
+RewriteCond %{REQUEST_URI} /googled2c15ca2f1bc622d.html [NC]
+RewriteRule .? inhetoogfotografie/%1 [L,NS]
+
+
+#RewriteCond %{HTTP:Host} ^(?:www\.)?inhetoogfotografie\.nl$
+#RewriteCond %{REQUEST_URI} /images(.+) [NC]
+#RewriteRule .? /inhetoogfotografie/images%1 [L]
+
+#RewriteCond %{HTTP:Host} ^(?:www\.)?inhetoogfotografie\.nl$
+#RewriteCond %{REQUEST_URI} (.+)
+#RewriteRule .? /inhetoogfotografie%1/$1/$2
+
+#onderstaande rule zorgt ervoor dat www.felixs.nl/holland.html alleen de phone-icon toont voor alle images. Alle andere rules #waren in commentaar
+#ook met redirect voor iho werkt het op default.html van iho. Het was na de redirect opgenomen
+#RewriteRule images(.*)   http://www.felixs.nl/images/phone-icon.png   [ NC]
+
+
+#RedirectMatch 301 http://www.inhetoogfotografie.nl/images/(.*) http://www.felixs.nl/images/phone-icon.png 
+#geen effect in geen enkele folder ook onafh van volgorde.

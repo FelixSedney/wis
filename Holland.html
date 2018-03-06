@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Landschappen Holland</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Landschappen in Holland omgeving van Kootwijkerzand, Gerritsfles, Palendijk, Bunschoten, Spakenburg ,Arkemheen, Eemland, Leuvenum, Hierden, Leersumseveld, Blauwe Kamer" />
+    <meta name="keywords" content="Landschap Holland, Kootwijkerzand, Kootwijk, Bunschoten, Spakenburg, Eemmeerloop, Arkemheen, Blauwe kamer, Hoogland West, Leuvenumse bos, Hierden, Hierdensche beek, Leuvenumse beek" />
+    <meta name="author" content="Felix Sedney">
+    <!-- Bootstrap -->
+    <link href="bootstrap/bootstrap.css" rel="stylesheet" media="screen">
+    <!-- <a href="Scripts/">Scripts/</a>-->
+    <!--toegevoegd-->
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+    <script type="text/javascript">
+        window.onload = function () {
+            $(document).ready(function () {
+                $.getJSON("http://www.felixs.nl/JSONService.svc/GetAllDescriptionsContaining?s=Holland", {},
+                    function (data) {
+                        resultTextBox.textContent = data;
+                    });
+            });
+        };
+    </script>
+
+
+    <link href="bootstrap/bootstrap-responsive.css" rel="stylesheet">
+</head>
+<body style="background-color: #404040" oncontextmenu="return false;">
+    <script src="http://code.jquery.com/jquery.js"></script>
+    <script src="scripts/bootstrap.min.js"></script>
+    <div class="container">
+        <div class="lead" style="background-color: #303030; padding: 10px">
+            <p>
+                <img id="Image1" src="Images/oog licht cropped.jpg" alt="felixs fotografie" style="width: 200px; float: right" />
+                <h1 style="color: #ffdd44">Landschappen Holland </h1>
+            </p>
+
+        </div>
+
+        <div class="row-fluid">
+            <div class="span6">
+                <p> <img id="Image999" src="Images/home.png" alt="felixs.nl" style="width: 35px;float:left" /><a id="HyperLink1" href="http://www.felixs.nl/Homepage.html" target="_blank"> Home</a></p>
+            </div>
+
+            <div class="span6">
+
+            </div>
+        </div>
+
+
+        <div class="row-fluid">
+
+            <div class="span3">
+                <p>
+                    <img id="Image1" src="Images/Holland/Arkemheen.jpg" alt="Arkemheen Coc" style="width: 300px;" />
+                </p>
+            </div>
+
+            <div class="span3">
+                <p style="color: #eebb22">Graspieper in polder Arkemheen. Arkemheen is een poldergebied tussen Bunschoten Spakenburg en Nijkerk. In het voorjaar broeden hier veel weidevogels. </p>
+                <p>
+                    <img id="Image111" src="Images/phone-icon.png" alt="Arkemheen" style="width: 25px; float: left" /><a id="HyperLink1" href="http://www.felixs.nl/GalleryPage.aspx?Landschappen" target="_blank">Arkemheen</a>
+                </p>
+                <p>
+                    <img id="Image112" src="Images/laptop-icon.png" alt="Arkemheen" style="width: 25px; float: left" /><a id="HyperLink1" href="http://www.felixs.nl/default.aspx#/SearchPage?id=Arkemheen" target="_blank">Arkemheen</a>
+                </p>
+            </div>
+
+
+
+            <div class="span3">
+                <p>
+                    <img id="Image2" src="Images/Holland/Kootwijk.jpg" alt="Kootwijkerznd" style="width: 300px;" />
+                </p>
+            </div>
+
+            <div class="span3">
+                <p style="color: #eebb22">Kootwijkerzand, een stuifzand gebied in het westelijke deel van de Veluwe, in de omgeving van (Radio) Kootwijk..</p>
+                <p>
+                    <img id="Image111" src="Images/phone-icon.png" alt="Kootwijkerzand" style="width: 25px; float: left" /><a id="HyperLink1" href="http://www.felixs.nl/GalleryPage.aspx?Vietnam" target="_blank">Kootwijkerzand</a>
+                </p>
+                <p>
+                    <img id="Image112" src="Images/laptop-icon.png" alt="Kootwijk" style="width: 25px; float: left" /><a id="HyperLink1" href="http://www.felixs.nl/default.aspx#/SearchPage?id=Kootwijk" target="_blank">Kootwijk</a>
+                </p>
+            </div>
+
+
+        </div>
+        <div class="row-fluid">
+
+
+            <div class="span3">
+                <p>
+                    <img id="Image3" src="Images/Holland/Palendijk.jpg" alt="Palendijk" style="width: 300px;" />
+                </p>
+            </div>
+
+            <div class="span3">
+                <p style="color: #eebb22">Palendijk Bunschoten Spakenburg, een gereconstueerde palendijk, zoals ze vroeger langs de hele kust van de Zuiderzee voorkwamen. </p>
+                <p>
+                    <img id="Image111" src="Images/phone-icon.png" alt="Palendijk Bunschoten Spakenburg" style="width: 25px; float: left" /><a id="HyperLink1" href="http://www.felixs.nl/GalleryPage.aspx?Landschappen" target="_blank">Palendijk</a>
+                </p>
+                <p>
+                    <img id="Image112" src="Images/laptop-icon.png" alt="Palendijk Bunschoten Spakenburg" style="width: 25px; float: left" /><a id="HyperLink1" href="http://www.felixs.nl/default.aspx#/SearchPage?id=Palendijk" target="_blank">Palendijk</a>
+                </p>
+            </div>
+
+            <div class="span3">
+                <p>
+                    <img id="Img3" src="Images/Holland/Von Gimborn Arboretum.jpg" alt="Gimborn Arboretum" style="width: 300px;" />
+                </p>
+            </div>
+
+            <div class="span3">
+                <p style="color: #eebb22">Bloeiende magnolia in Von Gimborn Arboretum. Hier zijn duizende bomen en struiken te vinden uit de gehele wereld.</p>
+                <p>
+                    <img id="Image111" src="Images/phone-icon.png" alt="Gimborn Arboretum " style="width: 25px; float: left" /><a id="HyperLink1" href="http://www.felixs.nl/GalleryPage.aspx?Landschappen" target="_blank">Arboretum </a>
+                </p>
+                <p>
+                    <img id="Image112" src="Images/laptop-icon.png" alt="Gimborn Arboretum " style="width: 25px; float: left" /><a id="HyperLink1" href="http://www.felixs.nl/default.aspx#/SearchPage?id=Arboretum" target="_blank">Arboretum </a>
+                </p>
+            </div>
+
+        </div>
+
+        <div class="row-fluid">
+
+
+            <div class="span3">
+                <p>
+                    <img id="Image4" src="Images/Holland/Leersumseveld.jpg" alt="Leersumseveld" style="width: 300px;" />
+                </p>
+            </div>
+
+            <div class="span3">
+                <p style="color: #eebb22">Leersumseveld, natuurgebied omgeving Doorn. Dit gebied bestaat uit bos met veel variatie in flora en fauna, open hei, zandverstuiving en  begroeide vennen. </p>
+                <p>
+                    <img id="Image111" src="Images/phone-icon.png" alt="Leersum" style="width: 25px; float: left" /><a id="HyperLink1" href="http://www.felixs.nl/GalleryPage.aspx?Landschappen" target="_blank">Leersumseveld</a>
+                </p>
+                <p>
+                    <img id="Image112" src="Images/laptop-icon.png" alt="Leersum" style="width: 25px; float: left" /><a id="HyperLink1" href="http://www.felixs.nl/default.aspx#/SearchPage?id=Leersumseveld" target="_blank">Leersumseveld</a>
+                </p>
+            </div>
+
+            <div class="span3">
+                <p>
+                    <img id="Img3" src="Images/Holland/Gerritsfles.jpg" alt="Gerritsfles" style="width: 300px;" />
+                </p>
+            </div>
+
+            <div class="span3">
+                <p style="color: #eebb22">Meertje bij het gehucht Gerritsfles in de buurt van Radio Kootwijk. Is niet meer vrij toegankelijk. Valt binnen het oefenterrein De Harskamp.</p>
+                <p>
+                    <img id="Image111" src="Images/phone-icon.png" alt="Gerritschfles" style="width: 25px; float: left" /><a id="HyperLink1" href="http://www.felixs.nl/GalleryPage.aspx?Landschappen" target="_blank">Gerritsfles</a>
+                </p>
+                <p>
+                    <img id="Image112" src="Images/laptop-icon.png" alt="Gerritschfles" style="width: 25px; float: left" /><a id="HyperLink1" href="http://www.felixs.nl/default.aspx#/SearchPage?id=Gerritsfles" target="_blank">Gerritschfles</a>
+                </p>
+            </div>
+
+        </div>
+
+        <div class="row-fluid">
+
+
+            <div class="span3">
+                <p>
+                    <img id="Image5" src="Images/Holland/Gerritsflesch.jpg" alt="DMZ" style="width: 300px;" />
+                </p>
+            </div>
+
+            <div class="span3">
+                <p style="color: #eebb22">Meertje bij het gehucht Gerritschfles in de buurt van Radio Kootwijk. Is niet meer vrij toegankelijk. Valt binnen het oefenterrein De Harskamp.</p>
+                <p>
+                    <img id="Image111" src="Images/phone-icon.png" alt="Gerritsfles" style="width: 25px; float: left" /><a id="HyperLink1" href="http://www.felixs.nl/GalleryPage.aspx?Landschappen" target="_blank">Gerritsfles</a>
+                </p>
+                <p>
+                    <img id="Image112" src="Images/laptop-icon.png" alt="Gerritschfles" style="width: 25px; float: left" /><a id="HyperLink1" href="http://www.felixs.nl/default.aspx#/SearchPage?id=Gerritschfles" target="_blank">Gerritschfles</a>
+                </p>
+            </div>
+
+            <div class="span3">
+                <p>
+                    <img id="Img3" src="Images/Holland/Leuvenum.jpg" alt="Khai Dinh" style="width: 300px;" />
+                </p>
+            </div>
+
+            <div class="span3">
+                <p style="color: #eebb22">De Hierdensche Beek(of leuvenumse beek) stroomt van het Uddelermeer en Bleeke Meer naar het Veluwemeer bij Hierden.</p>
+                <p>
+                    <img id="Image111" src="Images/phone-icon.png" alt="Leuvenum" style="width: 25px; float: left" /><a id="HyperLink1" href="http://www.felixs.nl/GalleryPage.aspx?Landschappen" target="_blank">Leuvenum</a>
+                </p>
+                <p>
+                    <img id="Image112" src="Images/laptop-icon.png" alt="Hierden" style="width: 25px; float: left" /><a id="HyperLink1" href="http://www.felixs.nl/default.aspx#/SearchPage?id=Hierden" target="_blank">Hierden</a>
+                </p>
+            </div>
+
+        </div>
+
+
+        <div class="row-fluid">
+            <div class="span12">
+                <output id="resultTextBox" />
+            </div>
+        </div>
+    </div>
+</body>
+</html>

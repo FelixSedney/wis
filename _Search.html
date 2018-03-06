@@ -1,0 +1,128 @@
+﻿<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="utf-8">
+    <title>InHetOogFotografie Search</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Reisverslagen van reizen naar Namibie, Myanmar, Thailand, Vietnam, America, Zuid Afrika, Costa Rica. Verder landschappen, vogels, zoogdieren, bloemen">
+    <meta name="keywords" content="Reisverslagen, Namibie,Botswana, Myanmar, Thailand, Vietnam, America, Zuid Afrika, Costa Rica, landschappen, vogels, zoogdieren, bloemen">
+    <meta name="author" content="Felix Sedney">
+
+    <!-- Le styles -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="blueimp/css/blueimp-gallery.min.css">
+    <link rel="stylesheet" href="blueimp/css/blueimp-gallery-indicator.css">
+    <!--<link href="http://www.InHetOogFotografie.nl/inhetoogfotografie/css/InHetOogText.css" rel="stylesheet">-->
+   <link href="http://www.InHetOogFotografie.nl/inhetoogfotografie/css/inhetoog_Bootstrap3.css" rel="stylesheet">
+
+<!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+<!--[if lt IE 9]>
+      <script src="../assets/js/html5shiv.js"></script>
+    <![endif]-->
+
+<!-- Fav and touch icons -->
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="../Bootstrap/ico/apple-touch-icon-144-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="../Bootstrap/ico/apple-touch-icon-114-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="../Bootstrap/ico/apple-touch-icon-72-precomposed.png">
+<link rel="apple-touch-icon-precomposed" href="../Bootstrap/ico/apple-touch-icon-57-precomposed.png">
+<link rel="shortcut icon" href="../Bootstrap/ico/favicon.png">
+</head>
+
+<body>
+
+    <div class="container-fluid">
+
+        <div class="lead" >
+<p>
+    <img class="hidden-xs" id="none" src="http://www.InHetOogFotografie.nl/inhetoogfotografie/Images/IHO_Logo_Lo.jpg" alt="InHetOog fotografie" />
+<h3>In het oog springende fotografie </h3>
+</p>
+</div>
+
+
+<div class="row" id="hideWhenCarouselIsShown" style="margin-top: -10px">
+
+<div class="row">
+    <div class="col-md-2">
+        <div id="breadcrumb">
+            <ul>
+                <li><a href="http://www.InHetOogFotografie.nl/"><span></span>Home</a></li>
+                <li><a href="#">Zoek</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="col-md-3">
+        <div>
+            <ul>
+                <li>
+                    <a href="http://felixs.mygb.nl/" target="_blank"> Guestbook </a>
+                </li>
+                <li>
+                    <a href="http://felixs.werkaandemuur.nl" target="_blank"> Webshop </a>
+                </li>
+                <li>
+                    <a href="http://www.InHetOogFotografie.nl/InHetOogFotografie/Contact.html"> Contact </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="col-md-3">
+        <button id="searchButton" class="btn btn-inverse" type="submit" style="float: right; width: 80px;height: 30px">Search</button>
+</div>
+
+<div class="col-md-2">
+    <textarea id="searchTerm" rows="1" style="margin-top: 2px" placeholder="Searchterm"></textarea>
+</div>
+<div class="col-md-2">
+</div>
+</div>
+</div><!--row-->
+
+<div class="row" id="carouselElement" >
+<div class="col-md-1">
+    <p></p>  <!--toegevoegd, omdat anders de column 0 breed is-->
+</div>
+
+<div class="col-md-10">
+    <div class="blueimp-gallery blueimp-gallery-carousel  blueimp-gallery-controls " id="blueimp-gallery" style="background: #303030;height: 600px; ">
+<div class="slides" style="max-height: 500px;margin: 40px 0 0 0;background: #303030"></div>
+<h3 class="title" style="font-size: 15px;color: #aaa; text-align: center"></h3>
+<a class="prev">‹</a>
+<a class="next">›</a>
+<a class="close">×</a>
+<a class="play-pause"></a>
+<ol class="indicator" style="display: none"></ol>
+</div>
+</div>
+
+<div class="col-md-1">
+</div>
+</div><!--row-->
+<div id="linkContainer">
+
+    <img src="Images/default_Lo_Fade_60.jpg" style="margin: 200px 0px 0px 600px; width: 600px"></img>
+<div id="ankerPoint"></div>
+
+</div><!--linkContainer-->
+
+
+</div><!--container-->
+    <footer >All Images Copyright © Felix Sedney</footer>
+
+<!-- Le javascript  ================================================== -->
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+    crossorigin="anonymous"></script>
+<script src="blueimp/js/blueimp-gallery.js"></script>
+<script src="blueimp/js/blueimp-gallery-indicator.js"></script>
+<script src="blueimp/js/blueimp-gallery.min.js"></script>
+<script src="js/SearchNew.js"></script>
+
+</body>
+
+</html>

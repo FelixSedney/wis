@@ -1,0 +1,255 @@
+﻿<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="FelixS fotografie, Landschappen, Flora, Fauna,  Reisverslagen" />
+    <meta name="keywords" content="Landschappen,fotografie, Outdoor Photography,Landscapes, Reisverslagen, Opaalkust,Namibie, Botswana" />
+    <meta name="author" content="Felix Sedney" />
+    <link rel="shortcut icon" href="http://www.felixs.nl/favicon.ico" type="image/x-icon" />
+    <title>FelixS Fotografie</title>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+
+    <link rel="stylesheet" href="blueimp/css/blueimp-gallery.min.css">
+    <link rel="stylesheet" href="blueimp/css/blueimp-gallery-indicator.css">
+
+    <link href="css/SubMenu.css" rel="stylesheet">
+    <link href="css/FelixS_Bootstrap3.css" rel="stylesheet">
+
+
+    <!-- Just for debugging purposes. Don't actually copy this line! -->
+    <!--[if lt IE 9]><script src="../../docs-assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+
+    <!-- Wrap all page content here -->
+    <div id="wrap">
+
+        <!-- Fixed navbar -->
+        <nav class="navbar navbar-default">
+            <div class="container-fluid" id="lead">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-left" href="#">
+                        <img src="Images/Felixs_default_lo.jpg" />
+                    </a>
+                </div>
+                <div class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="HomePage.html">Home</a></li>
+                        <li><a href="contactPage.html">Contact</a></li>
+                        <li><a href="portfolioPage.html?Page=recent">Recent</a></li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Portfolio <b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="portfolioPage.html?Page=portretten">Portretten</a></li>
+                                <li><a href="portfolioPage.html?Page=Flora">Flora</a></li>
+                                <li><a href="portfolioPage.html?Page=Fauna">Fauna</a></li>
+                                <li><a href="portfolioPage.html?Page=Diversen">Diversen</a></li>
+                                <li><a href="portfolioPage.html?Page=sport">Sport</a></li>
+                                <li class="dropdown-submenu">
+                                    <a href="#">Landschappen </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="portfolioPage.html?Page=Landschappen">Holland</a></li>
+                                        <li><a href="portfolioPage.html?Page=Europa">Europa</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Reisverslag <b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="portfolioPage.html?Page=amerika">Amerika</a></li>
+                                <li><a href="portfolioPage.html?Page=costarica">Costa Rica</a></li>
+                                <li><a href="portfolioPage.html?Page=namibie">Namibie2014</a></li>
+                                <li><a href="portfolioPage.html?Page=namibie16">Namibie2016</a></li>
+                                <li><a href="portfolioPage.html?Page=thailand">Thailand</a></li>
+                                <li><a href="portfolioPage.html?Page=vietnam">Vietnam</a></li>
+                                <li><a href="portfolioPage.html?Page=myanmar">Myanmar</a></li>
+                                <li><a href="portfolioPage.html?Page=zuidAfrika">Zuid Afrika</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="SearchPage.html">Zoeken</a></li>
+                        <li><a href="LinkPage.html">Links</a></li>
+                    </ul>
+                </div>
+                <!--/.nav-collapse -->
+            </div>
+        </nav>
+
+        
+
+
+        <div class="container-fluid" style="margin-top:20px;">
+
+
+            <div class="row" id="carouselElement" style="margin: 0 0 0 40px">
+                <div class="col-md-1">
+                    <p></p>
+                </div>
+
+                <div class="col-md-10">
+                 
+                    <!-- The Gallery as lightbox dialog, should be a child element of the document body -->
+                    <div id="blueimp-gallery" class="blueimp-gallery" style="background: #303030">
+                        <div class="slides" style="margin: 40px 0 0 0;background: #303030;padding: 5px 0 55px 0"></div>
+                        <h3 class="title"></h3>
+                        <a class="prev">‹</a>
+                        <a class="next">›</a>
+                        <a class="close">×</a>
+                        <a class="play-pause"></a>
+                        <ol class="indicator" style="display: none"></ol>
+                    </div>
+
+                </div>
+
+                <div class="col-md-1">
+                </div>
+            </div>        <!--row-->
+
+            <div class="row">
+                <div class="col-md-1">
+<a href="#" id="previousGroup">
+                        <img class="previousButton" src="images/MovePreviousHS.png" style="float: left; width: 20px" />
+                    </a>
+                </div>
+                 <div class="col-md-10">
+                    
+                </div>
+                 <div class="col-md-1">
+                     <a href="#" id="nextGroup">
+                        <img class="nextButton" src="images/MoveNextHS.png" style="float: right; width: 20px" />
+                    </a>
+                </div>
+
+            </div>
+
+<div id="linkContainer">
+            <div class="row">
+                 <div class="col-md-2">
+                    <a href="" id="anker0"
+                       title="" data-gallery="">
+                        <img id="thumbNail0" src="/images/default.jpg">
+                    </a>
+                </div>
+                 <div class="col-md-2">
+                    <a href="" id="anker1"
+                       title="" data-gallery="">
+                        <img id="thumbNail1" src="/images/default.jpg">
+                    </a>
+                </div>
+                <div class="col-md-2">
+                    <a href="" id="anker2"
+                       title="" data-gallery="">
+                        <img id="thumbNail2" src="/images/default.jpg">
+                    </a>
+                </div>
+                 <div class="col-md-2">
+                    <a href="" id="anker3"
+                       title="" data-gallery="">
+                        <img id="thumbNail3" src="/images/default.jpg">
+                    </a>
+                </div>
+                <div class="col-md-2">
+                    <a href="" id="anker4"
+                       title="" data-gallery="">
+                        <img id="thumbNail4" src="/images/default.jpg">
+                    </a>
+                </div>
+                <div class="col-md-2">
+                    <a href="" id="anker5"
+                       title="" data-gallery="">
+                        <img id="thumbNail5" src="/images/default.jpg">
+                    </a>
+                </div>
+                
+            </div>
+
+            <div class="row">
+                
+                 <div class="col-md-2">
+                    <a href="" id="anker6"
+                       title="" data-gallery="">
+                        <img id="thumbNail6" src="/images/default.jpg">
+                    </a>
+                </div>
+                <div class="col-md-2">
+                    <a href="" id="anker7"
+                       title="" data-gallery="">
+                        <img id="thumbNail7" src="/images/default.jpg">
+                    </a>
+                </div>
+                 <div class="col-md-2">
+                    <a href="" id="anker8"
+                       title="" data-gallery="">
+                        <img id="thumbNail8" src="/images/default.jpg">
+                    </a>
+                </div>
+                <div class="col-md-2">
+                    <a href="" id="anker9"
+                       title="" data-gallery="">
+                        <img id="thumbNail9" src="/images/default.jpg">
+                    </a>
+                </div>
+                <div class="col-md-2">
+                    <a href="" id="anker10"
+                       title="" data-gallery="">
+                        <img id="thumbNail10" src="/images/default.jpg">
+                    </a>
+                </div>
+                <div class="col-md-2">
+                    <a href="" id="anker11"
+                       title="" data-gallery="">
+                        <img id="thumbNail11" src="/images/default.jpg">
+                    </a>
+                </div>
+            </div>        <!--row-->
+
+</div><!--linkContainer-->
+
+
+
+        </div><!--container-->
+
+        <footer>
+            <p>All Images Copyright © <a href="http://www.felixs.nl">Felix Sedney</a>.</p>
+        </footer>
+    </div>
+
+ <script src="blueimp/js/vendor/jquery.js"></script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+            crossorigin="anonymous"></script>
+
+
+    <script src="blueimp/js/blueimp-helper.js"></script>
+    <script src="blueimp/js/blueimp-gallery.js"></script>
+    <script src="blueimp/js/blueimp-gallery-fullscreen.js"></script>
+    <script src="blueimp/js/blueimp-gallery-indicator.js"></script>
+
+    <script src="blueimp/js/blueimp-gallery.min.js"></script>
+
+    <script src="js/PortFolioNew.js"></script>
+
+</body>
+</html>

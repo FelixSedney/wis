@@ -1,0 +1,100 @@
+﻿
+body {
+    background-color: #333333;
+}
+
+img {
+    position: relative;
+    border: solid;
+    border-color: lightgray;
+    border-width: 1px;
+    border-radius: 5px;
+    max-height: 100%;
+    max-width: 100%;
+    margin: 5px;
+    z-index: 1;
+}
+
+@media only screen and (min-width : 1224px) {
+    /* Styles */
+    .col-md-1:hover img {
+        transform: scale(1.99);
+        z-index: 99;
+    }
+}
+
+Image#none {
+    margin: -3px;
+    border: none;
+    border-radius: 0px;
+    width: 190px;
+    float: right;
+}
+
+.navbar-left img {
+    position: absolute;
+    width: 11%;
+    margin: 0;
+    padding: 0;
+    vertical-align: top;
+    border: none;
+    border-radius: 0;
+}
+
+h1, h3, h6 {
+    color: #ffdd44;
+}
+
+h4 {
+    position: absolute;
+    margin-top: -40px;
+    color: lightgray;
+    left: 50px;
+    width: 100%;
+}
+
+footer {
+    color: #ffdd44;
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    bottom: 0;
+    position: fixed;
+}
+
+.breadcrumb {
+    background-color: #333333;
+}
+
+ul li {
+    display: inline;
+    margin: 5px;
+}
+
+#lead {
+    background-color: #303030;
+}
+
+.navbar-default .navbar-nav > li > a {
+    color: #ffdd44;
+}
+
+.navbar-default {
+    margin-bottom: 0px;
+}
+
+    .navbar-default .navbar-nav > li > a:hover,
+    .navbar-default .navbar-nav > li > a:focus {
+        color: #aa8844;
+    }
+
+
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+    width: 70%;
+    margin: auto;
+}
+
+#myCarousel {
+    padding: 20px;
+}

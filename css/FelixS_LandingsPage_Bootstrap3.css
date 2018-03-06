@@ -1,0 +1,79 @@
+﻿
+body {
+    background-color: #333333;
+    padding-top: 10px;
+}
+
+.myImages {
+    position: relative;
+    border: solid;
+    border-color: lightgray;
+    border-width: 1px;
+    border-radius: 5px;
+    max-height: 80%;
+    max-width: 80%;
+    margin: 15px;
+    z-index: 1;
+}
+
+
+
+Image#none {
+    margin: -3px;
+    border: none;
+    border-radius: 0px;
+    width: 190px;
+    float: right;
+}
+
+.navbar-left img {
+    position: absolute;
+    width: 11%;
+    margin: 0;
+    padding: 0;
+    vertical-align: top;
+    border: none;
+    border-radius: 0;
+}
+
+h1, h3,h5, h6 {
+    color: #ffdd44;
+}
+
+h4 {
+    position: absolute;
+    margin-top: -40px;
+    color: lightgray;
+    left: 50px;
+    width: 100%;
+}
+
+footer {
+    color: #ffdd44;
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    bottom: 0;
+    position: fixed;
+}
+
+
+ul li {
+    display: inline;
+    margin: 5px;
+}
+
+#lead {
+    background-color: #303030;
+}
+
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+    max-width: 50%;
+    max-height: 50%;
+    margin: auto;
+}
+
+#myCarousel {
+    padding: 20px;
+}

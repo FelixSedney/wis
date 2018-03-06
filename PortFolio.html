@@ -1,0 +1,141 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>InHetOogFotografie.nl Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Reisverslagen van reizen naar Namibie, Sri Lanka, Myanmar, Thailand, Vietnam, America, Zuid Afrika. Verder landschappen, vogels, zoogdieren, bloemen.">
+    <meta name="keywords" content="Reisverslagen, Namibie,Sri Lanka, Myanmar, Thailand, Vietnam, America, Zuid Afrika, landschappen, vogels, zoogdieren, bloemen." />
+    <meta name="author" content="Felix Sedney">
+
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+          crossorigin="anonymous">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp"
+          crossorigin="anonymous">
+
+    <link rel="stylesheet" href="blueimp/css/blueimp-gallery.min.css">
+    <link rel="stylesheet" href="blueimp/css/blueimp-gallery-indicator.css">
+
+    <link href="http://www.InHetOogFotografie.nl/inhetoogfotografie/css/InHetOogText.css" rel="stylesheet">
+
+    <style>
+        img {
+            max-height: 150px;
+            max-width: 150px;
+            margin: 5px;
+            box-shadow: 1px 1px 0 #aaa;
+        }
+    </style>
+
+    <!-- Fav and touch icons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../Bootstrap/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../Bootstrap/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../Bootstrap/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="../Bootstrap/ico/apple-touch-icon-57-precomposed.png">
+    <link rel="shortcut icon" href="../Bootstrap/ico/favicon.png">
+</head>
+
+<body>
+
+    <div class="container" id="containerid">
+
+        <div class="lead" style="background-color: #303030; padding: 10px; height: 50px">
+            <p>
+                <img id="none" src="http://www.InHetOogFotografie.nl/inhetoogfotografie/Images/IHO_Logo_Lo.jpg" alt="InHetOog fotografie"
+                     style="width: 160px; float: right" />
+                <h6>In het oog springende fotografie </h6>
+            </p>
+        </div>
+
+        <div class="row" id="hideWhenCarouselIsShown">
+            <div class="col-md-4 hidden-phone">
+                <div id="breadcrumb">
+                    <ul>
+                        <li><a href="http://www.InHetOogFotografie.nl/">Home</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div>
+                    <ul>
+                        <li>
+                            <!--<h4 id="resultTextBox">.#.#.</h4>-->
+                            <a href="http://felixs.mygb.nl/" target="_blank"> Guestbook</a>
+                        </li>
+                    </ul>
+                </div>>
+
+            </div>
+
+            <div class="col-md-4 hidden-phone">
+                <div>
+                    <ul>
+                        <li>
+                            <a href="http://felixs.werkaandemuur.nl" target="_blank">Webshop</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="row" id="carouselElement" style="margin: 0 0 0 40px">
+            <div class="col-md-1">
+                <p></p>
+            </div>
+
+            <div class="col-md-10">
+                <div class="blueimp-gallery blueimp-gallery-carousel  blueimp-gallery-controls " id="blueimp-gallery" style="background: #303030;height: 600px">
+                    <div class="slides" style="max-height: 500px;margin: 40px 0 0 0;background: #303030"></div>
+                    <h3 class="title" style="font-size: 15px;color: #aaa; text-align: center"></h3>
+                    <a class="prev">‹</a>
+                    <a class="next">›</a>
+                    <a class="close">×</a>
+                    <a class="play-pause"></a>
+                    <ol class="indicator" style="display: none"></ol>
+                </div>
+            </div>
+
+            <div class="col-md-1">
+            </div>
+        </div>
+        <!--row-->
+        <div id="linkContainer">
+
+
+            <div id="ankerPoint"></div>>
+
+        </div>
+        <!--linkContainer-->
+
+    </div>
+    <!-- /container -->
+    <!-- Le javascript
+        ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <!-- Latest compiled and minified JavaScript -->
+
+    <script src="blueimp/js/vendor/jquery.js"></script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+            crossorigin="anonymous"></script>
+
+
+    <script src="blueimp/js/blueimp-helper.js"></script>
+    <script src="blueimp/js/blueimp-gallery.js"></script>
+    <script src="blueimp/js/blueimp-gallery-fullscreen.js"></script>
+    <script src="blueimp/js/blueimp-gallery-indicator.js"></script>
+
+    <script src="blueimp/js/blueimp-gallery.min.js"></script>
+
+    <!--<script src="http://www.InHetOogFotografie.nl/inhetoogfotografie/PortFolioNew.js"></script>-->
+    <script src="js/PortFolioNew2.js"></script>
+
+</body>
+
+</html>
